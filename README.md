@@ -7,3 +7,5 @@
 GitHub Pages：Settings → Pages → Build and deployment → Deploy from a branch → main / (root) → Save。
 
 网站入口为 `index.html`，个人生活页为 `life.html`。全部图片使用仓库内的相对路径。
+
+旅行地图使用本地 Natural Earth 1:110m 陆地数据（public domain），由 Canvas 绘制正射投影地球，无需外部地图服务或密钥。
