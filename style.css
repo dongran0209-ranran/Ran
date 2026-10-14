@@ -53,3 +53,5 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .bluetti-strategy-card h3{font-size:24px;line-height:1.6;margin:14px 0}
 .bluetti-strategy-card p{font-size:15px;line-height:1.9;margin:0}
 @media(max-width:700px){.bluetti-strategy{grid-template-columns:1fr;gap:12px}.bluetti-strategy-card{padding:18px 0}.bluetti-strategy-card h3{font-size:23px}}
+
+.education-lines>p>strong{display:block;font-family:var(--serif-cn);font-size:clamp(20px,1.7vw,25px);font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:5px}.education-lines>p>span{display:block;font-size:14px;line-height:1.8}.education-lines>span{padding-top:7px}@media(max-width:700px){.education-lines>p>strong{font-size:21px}}
