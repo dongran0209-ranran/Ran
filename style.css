@@ -99,3 +99,22 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .contact-email,.contact-phone{font-family:var(--font);font-size:clamp(20px,2.2vw,30px);font-weight:400;line-height:1.5;letter-spacing:0}
 .contact-phone>span{font-size:20px;margin-left:12px}
 @media(max-width:700px){.contact-email,.contact-phone{font-size:20px}}
+
+/* Small drawn symbols give the capability index a more playful rhythm. */
+.capability-list>a{grid-template-columns:48px minmax(0,1fr) 25px;gap:18px;position:relative;isolation:isolate;transition:background .35s,border-color .35s}
+.capability-list>a:first-child{padding-top:25px}
+.capability-list>a:before{content:'';position:absolute;inset:9px -15px;border-radius:48% 7px 12px 9px;background:#dce5c35c;z-index:-1;opacity:0;transform:scale(.97);transition:opacity .35s,transform .45s}
+.capability-marker{display:flex;flex-direction:column;gap:8px;align-items:center}.capability-index{font-size:10px;letter-spacing:1px;color:var(--muted)}
+.capability-doodle{display:block;width:43px;height:43px;color:#77865c;stroke:currentColor;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round;overflow:visible;transform:rotate(-7deg);transition:transform .5s cubic-bezier(.2,.8,.2,1),color .3s}
+.capability-doodle .icon-detail{transform-origin:24px 24px;transition:transform .55s,opacity .35s}
+.capability-list>a:hover,.capability-list>a:focus-visible{padding-left:0;border-color:#a9b98e}
+.capability-list>a:hover:before,.capability-list>a:focus-visible:before{opacity:1;transform:scale(1)}
+.capability-list>a:hover .capability-doodle,.capability-list>a:focus-visible .capability-doodle{color:#52673b;transform:rotate(6deg) translateY(-3px)}
+.capability-list>a:hover .doodle-1 .icon-detail{transform:rotate(22deg) scale(1.08)}
+.capability-list>a:hover .doodle-2 .icon-detail{transform:translate(2px,-1px)}
+.capability-list>a:hover .doodle-3 .icon-detail{transform:rotate(-6deg) scale(1.07)}
+.capability-list>a:hover .doodle-4 .icon-detail{transform:translateY(-2px) rotate(-4deg)}
+.capability-list>a:focus-visible{outline:2px solid var(--accent);outline-offset:6px;border-radius:4px}
+.capability-list>a:hover>b,.capability-list>a:focus-visible>b{transform:translate(4px,-4px)}
+@media(max-width:700px){.capability-list>a{grid-template-columns:36px minmax(0,1fr) 20px;gap:12px}.capability-list>a:first-child{padding-top:22px}.capability-doodle{width:33px;height:33px}.capability-index{font-size:9px}.capability-list>a:before{inset:8px -7px}.capability-marker{gap:6px}}
+@media(prefers-reduced-motion:reduce){.capability-list>a,.capability-list>a:before,.capability-doodle,.capability-doodle .icon-detail,.capability-list b{transition:none}.capability-list>a:hover .capability-doodle,.capability-list>a:focus-visible .capability-doodle,.capability-list>a:hover .icon-detail,.capability-list>a:hover>b,.capability-list>a:focus-visible>b{transform:none}}
