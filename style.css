@@ -95,3 +95,7 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .map-hint.globe-invite{max-width:100%;flex-shrink:0}.globe-invite>span{min-width:0}@media(max-width:700px){.map-hint.globe-invite{width:fit-content;max-width:100%}}
 
 .evidence-story>.evidence-watch{display:inline-flex;width:fit-content;margin-top:24px;gap:12px;padding:11px 17px;font-size:14px}.evidence-watch .sticker-play{width:25px;height:25px;font-size:10px}.evidence-watch .sticker-arrow{font-size:22px;margin-left:12px}@media(max-width:700px){.evidence-story>.evidence-watch{font-size:12px;margin-top:18px;padding:10px 13px}}
+
+.contact-email,.contact-phone{font-family:var(--font);font-size:clamp(20px,2.2vw,30px);font-weight:400;line-height:1.5;letter-spacing:0}
+.contact-phone>span{font-size:20px;margin-left:12px}
+@media(max-width:700px){.contact-email,.contact-phone{font-size:20px}}
