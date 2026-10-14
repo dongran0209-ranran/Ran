@@ -65,3 +65,11 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .portrait-name i{font-family:var(--display);font-size:27px;font-weight:400;color:var(--accent)}
 .about-portrait small{display:block;margin-top:7px;font-size:9px;letter-spacing:1.3px;color:var(--muted)}
 @media(max-width:700px){.about-portrait{max-width:185px;margin:25px auto 12px}.about-portrait small{font-size:8px}.portrait-name{font-size:21px}.portrait-name i{font-size:25px}.about-side>.eyebrow{font-size:10px}}
+
+/* Let the water dissolve into the same paper as the next chapter. */
+.immersive-hero{background:var(--paper);padding-bottom:145px;min-height:730px}
+.immersive-hero .hero-photo,.immersive-hero .hero-shade,.immersive-hero .hero-grid{-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 170px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 170px),transparent 100%)}
+.hero-flow{height:28px;background:none;opacity:1}
+.hero-flow:after{display:none}
+.capabilities{padding-top:24px}
+@media(max-width:700px){.immersive-hero{padding-bottom:120px;min-height:690px;height:auto}.immersive-hero .hero-photo,.immersive-hero .hero-shade,.immersive-hero .hero-grid{-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 140px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 140px),transparent 100%)}.hero-scribble{bottom:210px}.hero-flow{height:16px}.capabilities{padding-top:14px}}
