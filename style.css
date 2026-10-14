@@ -57,11 +57,11 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .education-lines>p>strong{display:block;font-family:var(--serif-cn);font-size:clamp(20px,1.7vw,25px);font-weight:700;color:var(--ink);line-height:1.5;margin-bottom:5px}.education-lines>p>span{display:block;font-size:14px;line-height:1.8}.education-lines>span{padding-top:7px}@media(max-width:700px){.education-lines>p>strong{font-size:21px}}
 
 /* Personal portrait: a quiet photo print with a handwritten-style signature. */
-.about-portrait{max-width:330px;margin:26px 12px 0 0;position:relative;transform:rotate(-1.5deg)}
+.about-portrait{max-width:240px;margin:26px 12px 0 0;position:relative;transform:rotate(-1.5deg)}
 .about-portrait:before{content:'';position:absolute;inset:9px -10px 65px 9px;border:1px solid var(--line);z-index:-1;transform:rotate(3deg)}
 .about-portrait>img{display:block;width:100%;height:auto;aspect-ratio:746/995;object-fit:contain;border-radius:3px}
 .about-portrait figcaption{padding:17px 0 0;transform:rotate(1.5deg)}
-.portrait-name{display:flex;align-items:baseline;gap:14px;font-family:var(--serif-cn);font-size:27px;color:var(--ink)}
-.portrait-name i{font-family:var(--display);font-size:31px;font-weight:400;color:var(--accent)}
+.portrait-name{display:flex;align-items:baseline;gap:12px;font-family:var(--serif-cn);font-size:23px;color:var(--ink)}
+.portrait-name i{font-family:var(--display);font-size:27px;font-weight:400;color:var(--accent)}
 .about-portrait small{display:block;margin-top:7px;font-size:9px;letter-spacing:1.3px;color:var(--muted)}
-@media(max-width:700px){.about-portrait{max-width:255px;margin:25px auto 12px}.about-portrait small{font-size:8px}.portrait-name{font-size:24px}.portrait-name i{font-size:29px}.about-side>.eyebrow{font-size:10px}}
+@media(max-width:700px){.about-portrait{max-width:185px;margin:25px auto 12px}.about-portrait small{font-size:8px}.portrait-name{font-size:21px}.portrait-name i{font-size:25px}.about-side>.eyebrow{font-size:10px}}
