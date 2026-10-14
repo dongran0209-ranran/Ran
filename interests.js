@@ -28,5 +28,6 @@ heart.addEventListener('pointermove',event=>{if(event.pointerType!=='touch')expl
 heart.addEventListener('mousemove',explore);
 heart.addEventListener('click',explore);
 select(0);
+if('IntersectionObserver' in window){const visibility=new IntersectionObserver(entries=>{heart.classList.toggle('is-beating',entries[0].isIntersecting);},{threshold:.15});visibility.observe(heart);}else{heart.classList.add('is-beating');}
 heart.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();const next=(Math.max(active,0)+(e.key==='ArrowLeft'||e.key==='ArrowUp'?-1:1)+buttons.length)%buttons.length;buttons[next].focus();});
 })();

@@ -131,3 +131,11 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 
 .globe-stage>.globe-invite{position:absolute;right:4px;bottom:25px;z-index:3;max-width:calc(100% - 20px);padding:10px 14px;transform:rotate(-3deg)}.globe-stage>.globe-invite strong{font-size:15px}.globe-stage>.globe-invite small{font-size:10px}.globe-stage>.globe-invite .globe-drag-icon{width:35px}.globe-stage>.globe-invite:hover{transform:rotate(0) translateY(-2px)}
 @media(max-width:700px){.globe-stage>.globe-invite{position:relative;right:auto;bottom:auto;display:flex;width:fit-content;max-width:calc(100% - 12px);margin:0 auto 38px;padding:10px 13px}.globe-stage>.globe-invite strong{font-size:14px}.globe-stage>.globe-invite small{font-size:10px}.globe-stage>.globe-coordinate{bottom:8px}}
+
+/* Two close beats, then a rest; keep the interactive targets still. */
+.interest-heart-dots{transform-origin:50% 52%;animation:interest-heartbeat 2.5s ease-in-out infinite;animation-play-state:paused;will-change:transform}
+.interest-heart .interest-node>svg{transform-origin:center;animation:interest-iconbeat 2.5s ease-in-out infinite;animation-play-state:paused}
+.interest-heart.is-beating .interest-heart-dots,.interest-heart.is-beating .interest-node>svg{animation-play-state:running}
+@keyframes interest-heartbeat{0%,32%,100%{transform:scale(1)}9%{transform:scale(1.045)}17%{transform:scale(1)}25%{transform:scale(1.028)}}
+@keyframes interest-iconbeat{0%,32%,100%{transform:scale(1)}9%{transform:scale(1.09)}17%{transform:scale(1)}25%{transform:scale(1.05)}}
+@media(prefers-reduced-motion:reduce){.interest-heart-dots,.interest-heart .interest-node>svg{animation:none;will-change:auto}}
