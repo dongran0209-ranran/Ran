@@ -73,3 +73,9 @@ dialog{border:0;background:var(--paper);color:var(--ink);font-family:var(--font)
 .hero-flow:after{display:none}
 .capabilities{padding-top:24px}
 @media(max-width:700px){.immersive-hero{padding-bottom:120px;min-height:690px;height:auto}.immersive-hero .hero-photo,.immersive-hero .hero-shade,.immersive-hero .hero-grid{-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 140px),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 calc(100% - 140px),transparent 100%)}.hero-scribble{bottom:210px}.hero-flow{height:16px}.capabilities{padding-top:14px}}
+
+/* Match the scale of the short summer feedback screenshots to their neighbours. */
+.evidence-summer .stacked-feedback{width:100%;max-width:310px;justify-self:center;gap:16px}
+.evidence-summer .stacked-feedback img{max-height:205px!important;object-fit:contain;object-position:left top}
+.social-method>.stage-footer{grid-column:1/-1;margin-bottom:0}
+@media(max-width:700px){.evidence-summer .stacked-feedback{max-width:280px;justify-self:center}.evidence-summer .stacked-feedback img{max-height:170px!important}}
